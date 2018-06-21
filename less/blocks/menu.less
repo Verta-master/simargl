@@ -1,0 +1,30 @@
+.menu {
+  margin-top: auto;
+  margin-left: 45px;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  .reset();
+  list-style-type: none;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu__item {
+  margin-right: 30px;
+}
+
+.menu__link {
+  &:hover,
+  &:active,
+  &--active {
+    text-decoration: underline;
+  }
+}

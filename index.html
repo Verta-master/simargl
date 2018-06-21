@@ -2,15 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Title</title>
+  <title>Simargl</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
     <div class="wrapper header__wrap">
       <div class="logo">
-        <img src="" alt="" width="" height="">
+        <img src="img/logo.svg" alt="Simargl logo" width="164" height="90">
       </div>
       <nav class="menu">
         <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
@@ -30,8 +31,10 @@
         </ul>
       </nav>
       <div class="header__user">
-        <a href="tel:+73432885139" class="header__phone">+7 343 288 51 39</a>
-        <a href="#" class="header__cart">Ваша корзина</a>
+        <div class="header__link">
+          <a href="tel:+73432885139" class="header__phone">+7 343 288 51 39</a>
+          <a href="#" class="header__cart">Ваша корзина</a>
+        </div>
         <form action="#" class="search">
           <button type="button" class="search__btn"><span class="visually-hidden">Найти</span></button>
           <input type="text" name="search" class="search__input" placeholder="Поиск">
@@ -53,35 +56,71 @@
         <div class="gallery__block">
           <div class="gallery__wide">
             <a href="#" class="gallery__photo">
-              <img src="" alt="" width="384" height="192">
+              <img src="img/1.jpg" alt="Серия «Te amo»" width="384" height="192">
+              <div class="gallery__overlay">
+                <p class="gallery__title">Серия «Te amo»</p>
+                <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+              </div>
             </a>
             <a href="#" class="gallery__photo">
-              <img src="" alt="" width="384" height="192">
+              <img src="img/2.jpg" alt="Серия «Santiago»" width="384" height="192">
+              <div class="gallery__overlay">
+                <p class="gallery__title">Серия «Santiago»</p>
+                <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+              </div>
             </a>
             <a href="#" class="gallery__photo gallery__photo--wide">
-              <img src="" alt="" width="708" height="192">
+              <img src="img/2.jpg" alt="Серия «Ashton»" width="708" height="192">
+              <div class="gallery__overlay">
+                <p class="gallery__title">Серия «Ashton»</p>
+                <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+              </div>
             </a>
           </div>
           <a href="#" class="gallery__narrow">
-            <img src="" alt="" width="384" height="416">
+            <img src="img/4.jpg" alt="Двери со стеклом" width="384" height="416">
+            <div class="gallery__overlay">
+              <p class="gallery__title">Двери со стеклом</p>
+              <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+            </div>
           </a>
         </div>
         <div class="gallery__block">
           <a href="#" class="gallery__narrow">
-            <img src="" alt="" width="384" height="416">
+            <img src="img/5.jpg" alt="Серия «Questa-Rey»" width="384" height="416">
+            <div class="gallery__overlay">
+              <p class="gallery__title">Серия «Questa-Rey»</p>
+              <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+            </div>
           </a>
           <div class="gallery__wide">
             <a href="#" class="gallery__photo">
-              <img src="" alt="" width="384" height="192">
+              <img src="img/6.jpg" alt="Серия «Partagas»" width="384" height="192">
+              <div class="gallery__overlay">
+                <p class="gallery__title">Серия «Partagas»</p>
+                <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+              </div>
             </a>
             <a href="#" class="gallery__photo">
-              <img src="" alt="" width="384" height="192">
+              <img src="img/7.jpg" alt="Серия «Fonseca»" width="384" height="192">
+              <div class="gallery__overlay">
+                <p class="gallery__title">Серия «Fonseca»</p>
+                <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+              </div>
             </a>
             <a href="#" class="gallery__photo">
-              <img src="" alt="" width="384" height="192">
+              <img src="img/2.jpg" alt="Хиты продаж" width="384" height="192">
+              <div class="gallery__overlay">
+                <p class="gallery__title">Хиты продаж</p>
+                <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+              </div>
             </a>
             <a href="#" class="gallery__photo">
-              <img src="" alt="" width="384" height="192">
+              <img src="img/9.jpg" alt="Серия «Vegas»" width="384" height="192">
+              <div class="gallery__overlay">
+                <p class="gallery__title">Серия «Vegas»</p>
+                <p class="gallery__info">Описание серии дверей с привязкой к каталогу товаров</p>
+              </div>
             </a>
           </div>
         </div>
@@ -90,9 +129,15 @@
   </main>
   
   <footer class="footer">
-    
+    <div class="wrapper footer__wrap">
+      <address>Свердловская область, пос.Прохладный, ул. Березовая 5</address>
+      <div class="footer__user">
+        <a href="tel:+73432885139" class="footer__phone">+7 343 288 51 39</a>
+        <a href="mailto:zakaz@simargl-doors.ru" class="footer__mail">zakaz@simargl-doors.ru</a>
+      </div>
+    </div>
   </footer>
   
-  <script src=""></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
 </body>
 </html>
