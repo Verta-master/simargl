@@ -1,0 +1,114 @@
+.sort {
+  margin-bottom: 23px;
+}
+
+.sort__wrap {
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 24px 0 rgba(190, 190, 190, 0.25);
+  background-color: #ffffff;
+  border: solid 1px rgba(239, 239, 239, 0.55);
+}
+
+.sort__title {
+  margin-top: 0;
+  color: #000;
+  line-height: 1;
+  float: left;
+}
+
+.sort__output {
+  font-size: 12px;
+  color: #000;
+  text-align: right;
+  
+  a {
+    margin-left: 10px;
+    color: #0088cc;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  span {
+    margin-left: 10px;
+  }
+}
+
+.sort__filter {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.sort__select {
+  width: 192px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  padding-left: 15px;
+  padding-right: 20px;
+  font-size: 12px;
+  color: #000;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
+  appearance: none;
+  background-image: url(../img/angle-down.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: 93% 14px;
+  cursor: pointer;
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+  
+  option[disabled] {
+    display: none;
+  }
+  
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.sort__price {
+  margin-right: 16px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+}
+
+.sort__input {
+  width: 120px;
+  height: 40px;
+  font-size: 12px;
+  color: #000;
+  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
+  
+  &::placeholder {
+    color: #d4d4d4;
+    opacity: 1;
+  }
+}
+
+.sort__btn {
+  width: 192px;
+  height: 40px;
+}

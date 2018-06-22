@@ -1,0 +1,50 @@
+.order {
+  margin-top: 45px;
+}
+
+.order__color-choice {
+  .reset();
+  margin-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000;
+  border: none;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+  
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+}
+
+.order__checkbox {
+  display: none;
+}
+
+.order__checkbox:checked + .order__color {
+  border-color: #0088cc;
+}
+
+.order__color {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: solid 2px rgba(0,0,0,0);
+  cursor: pointer;
+  .transition();
+  
+  img {
+    display: block;
+  }
+  
+  &:hover,
+  &:active {
+    border-color: #0088cc;
+    .transition();
+  }
+}

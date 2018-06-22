@@ -8,6 +8,45 @@
   padding-bottom: 20px;
   color: #fff;
   background-color: rgba(0,0,0,0.7);
+  
+  &--internal {
+    background-color: #333;
+    
+    .logo img {
+      height: 40px;
+      width: auto;
+    }
+    .header__user {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .menu {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 38px;
+      align-self: center;
+    }
+    .search {
+      margin-top: 0;
+      margin-left: 24px;
+      
+      &:hover {
+        .search__input {
+          width: 60px;
+          .transition();
+        }
+      }
+    }
+    .search__btn {
+      background-image: url(../img/search-internal.svg);
+      background-size: 30px 30px;
+    }
+    .search__input {
+      width: 0;
+      .transition();
+    }
+  }
 }
 
 .header__wrap {
