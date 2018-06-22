@@ -616,6 +616,8 @@ button {
   opacity: 1;
 }
 .menu {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-top: auto;
   margin-left: 45px;
   margin-right: auto;
@@ -641,34 +643,6 @@ button {
 .menu__link:active,
 .menu__link--active {
   text-decoration: underline;
-}
-.btn {
-  width: 256px;
-  height: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  border-radius: 3px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#f76b1c), to(#fad961));
-  background-image: linear-gradient(to top, #f76b1c, #fad961);
-}
-.btn:hover,
-.btn:active {
-  -webkit-animation-name: btn-hover;
-          animation-name: btn-hover;
-  -webkit-animation-duration: 0.1s;
-          animation-duration: 0.1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 @-webkit-keyframes btn-hover {
   0% {
@@ -713,6 +687,34 @@ button {
     background-image: none;
     background-color: #f76b1c;
   }
+}
+.btn {
+  width: 256px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f76b1c), to(#fad961));
+  background-image: linear-gradient(to top, #f76b1c, #fad961);
+}
+.btn:hover,
+.btn:active {
+  -webkit-animation-name: btn-hover;
+          animation-name: btn-hover;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .gallery {
   margin-top: -96px;
