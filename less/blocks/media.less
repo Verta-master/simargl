@@ -46,6 +46,12 @@
   .menu {
     margin-bottom: 0;
     margin-top: 0;
+    
+    &--opened {
+      .menu__btn {
+        background-image: url(../img/icon-menu-cross.svg);
+      }
+    }
   }
   .search {
     margin-top: 0;
@@ -156,5 +162,8 @@
     margin-right: 0;
     margin-bottom: 10px;
     margin-top: 10px;
+  }
+  .footer address {
+    max-width: 250px;
   }
 }
