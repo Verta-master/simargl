@@ -523,6 +523,10 @@ button {
   background-image: url(../img/phone.svg);
   background-repeat: no-repeat;
 }
+.header__phone:hover::before,
+.header__phone:active::before {
+  background-image: url(../img/phone-yellow.svg);
+}
 .header__cart {
   position: relative;
   padding-left: 32px;
@@ -585,6 +589,11 @@ button {
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center;
+}
+.search__btn:hover,
+.search__btn:active {
+  background-image: url(../img/search-internal.svg);
+  background-size: 30px 30px;
 }
 .search__input {
   width: 60px;
@@ -971,6 +980,9 @@ button {
     margin-bottom: 0;
     margin-top: 0;
   }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icon-menu-cross.svg);
+  }
   .search {
     margin-top: 0;
     margin-left: 24px;
@@ -1084,5 +1096,8 @@ button {
     margin-right: 0;
     margin-bottom: 10px;
     margin-top: 10px;
+  }
+  .footer address {
+    max-width: 250px;
   }
 }
