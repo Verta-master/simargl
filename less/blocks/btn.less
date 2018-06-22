@@ -36,3 +36,51 @@
     animation-fill-mode: forwards;
   }
 }
+
+.btn-white {
+  width: 192px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #d4d4d4;
+  border-radius: 3px;
+  border: 1px solid #d4d4d4;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #f76b1c;
+    border-color: #f76b1c;
+    .transition();
+  }
+}
+
+.btn-colored {
+  width: 192px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  
+  &--green {
+    background-color: #6bbc53;
+    border: 1px solid #6bbc53;
+  }
+  
+  &--grey {
+    background-color: #86939e;
+    border: 1px solid #86939e;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+    .transition();
+  }
+}

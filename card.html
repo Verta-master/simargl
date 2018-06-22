@@ -67,7 +67,7 @@
             <option value="1">Model 1</option>
             <option value="2">Model 2</option>
           </select>
-          <select name="color" id="color" class="sort__select">
+          <select name="color" id="color" class="sort__select sort__select--color">
             <option value="" selected disabled>Выберите цвет</option>
             <option value="1">Model 1</option>
             <option value="2">Model 2</option>
@@ -122,19 +122,19 @@
                 <span>Укажите цвет:</span>
                 <input type="checkbox" name="color1" id="color1" class="order__checkbox">
                 <label for="color1" class="order__color">
-                  <img src="img/color-spot.png" alt="Paradiso 1" width="18" height="18" title="color 1">
+                  <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
                 </label>
                 <input type="checkbox" name="color2" id="color2" class="order__checkbox">
                 <label for="color2" class="order__color">
-                  <img src="img/color-spot-2.png" alt="Paradiso 1" width="18" height="18" title="color 2">
+                  <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
                 </label>
                 <input type="checkbox" name="color3" id="color3" class="order__checkbox">
                 <label for="color3" class="order__color">
-                  <img src="img/color-spot-3.png" alt="Paradiso 1" width="18" height="18" title="color 3">
+                  <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
                 </label>
                 <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
                 <label for="color4" class="order__color">
-                  <img src="img/color-spot-selected.png" alt="Paradiso 1" width="18" height="18" title="color 4">
+                  <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
                 </label>
               </fieldset>
               <div class="order__wrap">
@@ -148,8 +148,8 @@
       </ul>
       
       <div class="result__wrap">
-        <a href="#" class="link">Показать все товары</a>
-        <a href="#" class="link">Следующая позиция из коллекции</a>
+        <a href="#">Показать все товары</a>
+        <a href="#">Следующая позиция из коллекции</a>
       </div>
     </section>
     
@@ -169,15 +169,27 @@
                 <span>Модельный ряд:</span>
                 <a href="#">Paradiso</a>
               </p>
-              <p class="card__model">
+              <form action="#" class="order order--card">
                 <span>Цвет:</span>
-                <span>
-                  <img src="img/color-spot.png" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  <img src="img/color-spot-2.png" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  <img src="img/color-spot-3.png" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  <img src="img/color-spot-selected.png" alt="Paradiso 1" width="18" height="18" title="color 4">
-                </span>
-              </p>
+                <div class="order__choice">
+                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
+                  <label for="color1" class="order__color">
+                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                  </label>
+                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
+                  <label for="color2" class="order__color">
+                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                  </label>
+                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
+                  <label for="color3" class="order__color">
+                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                  </label>
+                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
+                  <label for="color4" class="order__color">
+                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                  </label>
+                </div>
+              </form>
               <p class="card__model">
                 <span>Материал:</span>
                 <a href="#">Экошпон</a>
@@ -206,15 +218,27 @@
                 <span>Модельный ряд:</span>
                 <a href="#">Paradiso</a>
               </p>
-              <p class="card__model">
+              <form action="#" class="order order--card">
                 <span>Цвет:</span>
-                <span>
-                  <img src="img/color-spot.png" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  <img src="img/color-spot-2.png" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  <img src="img/color-spot-3.png" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  <img src="img/color-spot-selected.png" alt="Paradiso 1" width="18" height="18" title="color 4">
-                </span>
-              </p>
+                <div class="order__choice">
+                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
+                  <label for="color1" class="order__color">
+                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                  </label>
+                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
+                  <label for="color2" class="order__color">
+                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                  </label>
+                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
+                  <label for="color3" class="order__color">
+                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                  </label>
+                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
+                  <label for="color4" class="order__color">
+                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                  </label>
+                </div>
+              </form>
               <p class="card__model">
                 <span>Материал:</span>
                 <a href="#">Экошпон</a>
@@ -243,15 +267,27 @@
                 <span>Модельный ряд:</span>
                 <a href="#">Fonseca</a>
               </p>
-              <p class="card__model">
+              <form action="#" class="order order--card">
                 <span>Цвет:</span>
-                <span>
-                  <img src="img/color-spot.png" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  <img src="img/color-spot-2.png" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  <img src="img/color-spot-3.png" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  <img src="img/color-spot-selected.png" alt="Paradiso 1" width="18" height="18" title="color 4">
-                </span>
-              </p>
+                <div class="order__choice">
+                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
+                  <label for="color1" class="order__color">
+                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                  </label>
+                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
+                  <label for="color2" class="order__color">
+                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                  </label>
+                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
+                  <label for="color3" class="order__color">
+                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                  </label>
+                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
+                  <label for="color4" class="order__color">
+                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                  </label>
+                </div>
+              </form>
               <p class="card__model">
                 <span>Материал:</span>
                 <a href="#">Экошпон</a>
@@ -286,15 +322,27 @@
                 <span>Модельный ряд:</span>
                 <a href="#">Paradiso</a>
               </p>
-              <p class="card__model">
+              <form action="#" class="order order--card">
                 <span>Цвет:</span>
-                <span>
-                  <img src="img/color-spot.png" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  <img src="img/color-spot-2.png" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  <img src="img/color-spot-3.png" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  <img src="img/color-spot-selected.png" alt="Paradiso 1" width="18" height="18" title="color 4">
-                </span>
-              </p>
+                <div class="order__choice">
+                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
+                  <label for="color1" class="order__color">
+                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                  </label>
+                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
+                  <label for="color2" class="order__color">
+                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                  </label>
+                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
+                  <label for="color3" class="order__color">
+                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                  </label>
+                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
+                  <label for="color4" class="order__color">
+                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                  </label>
+                </div>
+              </form>
               <p class="card__model">
                 <span>Материал:</span>
                 <a href="#">Экошпон</a>
@@ -323,15 +371,27 @@
                 <span>Модельный ряд:</span>
                 <a href="#">Paradiso</a>
               </p>
-              <p class="card__model">
+              <form action="#" class="order order--card">
                 <span>Цвет:</span>
-                <span>
-                  <img src="img/color-spot.png" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  <img src="img/color-spot-2.png" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  <img src="img/color-spot-3.png" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  <img src="img/color-spot-selected.png" alt="Paradiso 1" width="18" height="18" title="color 4">
-                </span>
-              </p>
+                <div class="order__choice">
+                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
+                  <label for="color1" class="order__color">
+                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                  </label>
+                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
+                  <label for="color2" class="order__color">
+                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                  </label>
+                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
+                  <label for="color3" class="order__color">
+                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                  </label>
+                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
+                  <label for="color4" class="order__color">
+                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                  </label>
+                </div>
+              </form>
               <p class="card__model">
                 <span>Материал:</span>
                 <a href="#">Экошпон</a>
@@ -360,15 +420,27 @@
                 <span>Модельный ряд:</span>
                 <a href="#">Fonseca</a>
               </p>
-              <p class="card__model">
+              <form action="#" class="order order--card">
                 <span>Цвет:</span>
-                <span>
-                  <img src="img/color-spot.png" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  <img src="img/color-spot-2.png" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  <img src="img/color-spot-3.png" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  <img src="img/color-spot-selected.png" alt="Paradiso 1" width="18" height="18" title="color 4">
-                </span>
-              </p>
+                <div class="order__choice">
+                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
+                  <label for="color1" class="order__color">
+                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                  </label>
+                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
+                  <label for="color2" class="order__color">
+                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                  </label>
+                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
+                  <label for="color3" class="order__color">
+                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                  </label>
+                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
+                  <label for="color4" class="order__color">
+                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                  </label>
+                </div>
+              </form>
               <p class="card__model">
                 <span>Материал:</span>
                 <a href="#">Экошпон</a>
