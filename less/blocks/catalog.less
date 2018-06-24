@@ -1,0 +1,37 @@
+.catalog {
+  margin-bottom: 80px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  
+  .card__item {
+    margin-right: 32px;
+    margin-bottom: 32px;
+    
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.catalog__link {
+  font-size: 14px;
+  color: #000;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.catalog__pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
