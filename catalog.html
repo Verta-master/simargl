@@ -6,6 +6,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Simargl</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -451,7 +452,7 @@
       <div class="call__bottom">
         <div class="wrapper">
           <p>Оставьте заявку на замер!</p>
-          <a href="#" class="btn call__btn">Вызвать замерщика</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="btn call__btn">Вызвать замерщика</a>
         </div>
       </div>
     </section>
@@ -626,9 +627,22 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать обратный звонок</p>
+    <form action="#" class="modal__form">
+      <input type="text" name="name" class="modal__input modal__input--name" placeholder="Укажите ваше имя полностью">
+      <input type="text" name="phone" class="modal__input modal__input--phone" placeholder="Ваш контактный номер телефона">
+      <input type="checkbox" name="check" id="check" class="modal__checkbox">
+      <label for="check" class="modal__label">Отправляя форму, я даю согласие на обработку персональных данных</label>
+      <button type="submit" class="btn modal__btn">Заказать звонок</button>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
 <!-- Sliders -->
   <script>
