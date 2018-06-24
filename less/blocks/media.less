@@ -125,6 +125,20 @@
   .order__btn {
     margin-left: auto;
   }
+  .catalog__list {
+    justify-content: space-around;
+    
+    .card__item {
+      margin-right: 0;
+    }
+  }
+  .call {
+    .gallery__narrow {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  }
 }
 
 //----------------------------------
@@ -166,6 +180,14 @@
   .card__slider,
   .card__slider-2 {
     width: 386px;
+  }
+  .catalog__pages {
+    display: block;
+    text-align: center;
+  }
+  .catalog__link {
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
@@ -212,6 +234,16 @@
   .title,
   .card {
     margin-bottom: 50px;
+  }
+  .pages__link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    
+    &::after {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -299,6 +331,7 @@
       text-align: center;
     }
   }
+  .call__bottom p,
   .title {
     font-size: 24px;
   }
@@ -327,5 +360,20 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+  }
+  .pages {
+    box-shadow: none;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .pages__link {
+    border: solid 1px #f9f9f9;
+    
+    &::after {
+      display: none;
+    }
   }
 }
