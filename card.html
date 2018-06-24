@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Simargl</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -140,7 +141,7 @@
               <div class="order__wrap">
                 <a href="#" class="btn-white">Вернуться в каталог</a>
                 <p class="order__price">3 700 руб.</p>
-                <a href="#" class="btn-colored btn-colored--green">Добавить в корзину</a>
+                <a href="#" class="btn-colored btn-colored--green order__btn">Добавить в корзину</a>
               </div>
             </form>
           </div>
@@ -153,310 +154,371 @@
       </div>
     </section>
     
-    <section class="card wrapper">
-      <p class="title">Другие позиции из этой коллекции</p>
-      <ul class="card__list">
-        <li class="card__item">
-          <div class="card__block">
-            <a href="#" class="card__img">
-              <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
-            </a>
-            <div class="card__info">
-              <p class="card__title">Paradiso 1</p>
-              <span class="card__articul">Артикул:124325425</span>
-              <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
-              <p class="card__model">
-                <span>Модельный ряд:</span>
-                <a href="#">Paradiso</a>
-              </p>
-              <form action="#" class="order order--card">
-                <span>Цвет:</span>
-                <div class="order__choice">
-                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
-                  <label for="color1" class="order__color">
-                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  </label>
-                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
-                  <label for="color2" class="order__color">
-                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  </label>
-                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
-                  <label for="color3" class="order__color">
-                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  </label>
-                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
-                  <label for="color4" class="order__color">
-                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
-                  </label>
+    <section class="card">
+      <div class="wrapper">
+        <p class="title">Другие позиции из этой коллекции</p>
+        <div class="swiper-container card__slider">
+          <ul class="swiper-wrapper card__list">
+            <li class="swiper-slide card__item">
+              <div class="card__block">
+                <a href="#" class="card__img">
+                  <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
+                </a>
+                <div class="card__info">
+                  <p class="card__title">Paradiso 1</p>
+                  <span class="card__articul">Артикул:124325425</span>
+                  <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
+                  <p class="card__model">
+                    <span>Модельный ряд:</span>
+                    <a href="#">Paradiso</a>
+                  </p>
+                  <form action="#" class="order order--card">
+                    <span>Цвет:</span>
+                    <div class="order__choice">
+                      <input type="checkbox" name="color1" id="color41" class="order__checkbox">
+                      <label for="color41" class="order__color">
+                        <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                      </label>
+                      <input type="checkbox" name="color2" id="color42" class="order__checkbox">
+                      <label for="color42" class="order__color">
+                        <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                      </label>
+                      <input type="checkbox" name="color3" id="color43" class="order__checkbox">
+                      <label for="color43" class="order__color">
+                        <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                      </label>
+                      <input type="checkbox" name="color4" id="color44" class="order__checkbox" checked>
+                      <label for="color44" class="order__color">
+                        <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                      </label>
+                    </div>
+                  </form>
+                  <p class="card__model">
+                    <span>Материал:</span>
+                    <a href="#">Экошпон</a>
+                  </p>
+                  <p class="card__model">
+                    <span>Стекла:</span>
+                    <a href="#">Нет</a>
+                  </p>
                 </div>
-              </form>
-              <p class="card__model">
-                <span>Материал:</span>
-                <a href="#">Экошпон</a>
-              </p>
-              <p class="card__model">
-                <span>Стекла:</span>
-                <a href="#">Нет</a>
-              </p>
-            </div>
-          </div>
-          <div class="card__block">
-            <p class="card__price">3 700 руб.</p>
-            <a href="#" class="btn-colored btn-colored--grey">Добавить в корзину</a>
-          </div>
-        </li>
-        <li class="card__item">
-          <div class="card__block">
-            <a href="#" class="card__img">
-              <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
-            </a>
-            <div class="card__info">
-              <p class="card__title">Paradiso 3</p>
-              <span class="card__articul">Артикул:124325425</span>
-              <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
-              <p class="card__model">
-                <span>Модельный ряд:</span>
-                <a href="#">Paradiso</a>
-              </p>
-              <form action="#" class="order order--card">
-                <span>Цвет:</span>
-                <div class="order__choice">
-                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
-                  <label for="color1" class="order__color">
-                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  </label>
-                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
-                  <label for="color2" class="order__color">
-                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  </label>
-                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
-                  <label for="color3" class="order__color">
-                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  </label>
-                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
-                  <label for="color4" class="order__color">
-                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
-                  </label>
+              </div>
+              <div class="card__block">
+                <p class="card__price">3 700 руб.</p>
+                <a href="#" class="btn-colored btn-colored--grey card__btn">Добавить в корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide card__item">
+              <div class="card__block">
+                <a href="#" class="card__img">
+                  <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
+                </a>
+                <div class="card__info">
+                  <p class="card__title">Paradiso 3</p>
+                  <span class="card__articul">Артикул:124325425</span>
+                  <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
+                  <p class="card__model">
+                    <span>Модельный ряд:</span>
+                    <a href="#">Paradiso</a>
+                  </p>
+                  <form action="#" class="order order--card">
+                    <span>Цвет:</span>
+                    <div class="order__choice">
+                      <input type="checkbox" name="color1" id="color51" class="order__checkbox">
+                      <label for="color51" class="order__color">
+                        <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                      </label>
+                      <input type="checkbox" name="color2" id="color52" class="order__checkbox">
+                      <label for="color52" class="order__color">
+                        <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                      </label>
+                      <input type="checkbox" name="color3" id="color53" class="order__checkbox">
+                      <label for="color53" class="order__color">
+                        <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                      </label>
+                      <input type="checkbox" name="color4" id="color54" class="order__checkbox" checked>
+                      <label for="color54" class="order__color">
+                        <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                      </label>
+                    </div>
+                  </form>
+                  <p class="card__model">
+                    <span>Материал:</span>
+                    <a href="#">Экошпон</a>
+                  </p>
+                  <p class="card__model">
+                    <span>Стекла:</span>
+                    <a href="#">Нет</a>
+                  </p>
                 </div>
-              </form>
-              <p class="card__model">
-                <span>Материал:</span>
-                <a href="#">Экошпон</a>
-              </p>
-              <p class="card__model">
-                <span>Стекла:</span>
-                <a href="#">Нет</a>
-              </p>
-            </div>
-          </div>
-          <div class="card__block">
-            <p class="card__price">3 700 руб.</p>
-            <a href="#" class="btn-colored btn-colored--grey">Добавить в корзину</a>
-          </div>
-        </li>
-        <li class="card__item">
-          <div class="card__block">
-            <a href="#" class="card__img">
-              <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
-            </a>
-            <div class="card__info">
-              <p class="card__title">Fonseca 6</p>
-              <span class="card__articul">Артикул:124325425</span>
-              <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
-              <p class="card__model">
-                <span>Модельный ряд:</span>
-                <a href="#">Fonseca</a>
-              </p>
-              <form action="#" class="order order--card">
-                <span>Цвет:</span>
-                <div class="order__choice">
-                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
-                  <label for="color1" class="order__color">
-                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  </label>
-                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
-                  <label for="color2" class="order__color">
-                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  </label>
-                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
-                  <label for="color3" class="order__color">
-                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  </label>
-                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
-                  <label for="color4" class="order__color">
-                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
-                  </label>
+              </div>
+              <div class="card__block">
+                <p class="card__price">3 700 руб.</p>
+                <a href="#" class="btn-colored btn-colored--grey card__btn">Добавить в корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide card__item">
+              <div class="card__block">
+                <a href="#" class="card__img">
+                  <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
+                </a>
+                <div class="card__info">
+                  <p class="card__title">Fonseca 6</p>
+                  <span class="card__articul">Артикул:124325425</span>
+                  <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
+                  <p class="card__model">
+                    <span>Модельный ряд:</span>
+                    <a href="#">Fonseca</a>
+                  </p>
+                  <form action="#" class="order order--card">
+                    <span>Цвет:</span>
+                    <div class="order__choice">
+                      <input type="checkbox" name="color1" id="color61" class="order__checkbox">
+                      <label for="color61" class="order__color">
+                        <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                      </label>
+                      <input type="checkbox" name="color2" id="color62" class="order__checkbox">
+                      <label for="color62" class="order__color">
+                        <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                      </label>
+                      <input type="checkbox" name="color3" id="color63" class="order__checkbox">
+                      <label for="color63" class="order__color">
+                        <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                      </label>
+                      <input type="checkbox" name="color4" id="color64" class="order__checkbox" checked>
+                      <label for="color64" class="order__color">
+                        <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                      </label>
+                    </div>
+                  </form>
+                  <p class="card__model">
+                    <span>Материал:</span>
+                    <a href="#">Экошпон</a>
+                  </p>
+                  <p class="card__model">
+                    <span>Стекла:</span>
+                    <a href="#">Нет</a>
+                  </p>
                 </div>
-              </form>
-              <p class="card__model">
-                <span>Материал:</span>
-                <a href="#">Экошпон</a>
-              </p>
-              <p class="card__model">
-                <span>Стекла:</span>
-                <a href="#">Нет</a>
-              </p>
-            </div>
-          </div>
-          <div class="card__block">
-            <p class="card__price">3 700 руб.</p>
-            <a href="#" class="btn-colored btn-colored--grey">Добавить в корзину</a>
-          </div>
-        </li>
-      </ul>
+              </div>
+              <div class="card__block">
+                <p class="card__price">3 700 руб.</p>
+                <a href="#" class="btn-colored btn-colored--grey card__btn">Добавить в корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide card__item">
+              <div class="card__block">
+                <a href="#" class="card__img">
+                  <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
+                </a>
+                <div class="card__info">
+                  <p class="card__title">Fonseca 6</p>
+                  <span class="card__articul">Артикул:124325425</span>
+                  <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
+                  <p class="card__model">
+                    <span>Модельный ряд:</span>
+                    <a href="#">Fonseca</a>
+                  </p>
+                  <form action="#" class="order order--card">
+                    <span>Цвет:</span>
+                    <div class="order__choice">
+                      <input type="checkbox" name="color1" id="color-61" class="order__checkbox">
+                      <label for="color-61" class="order__color">
+                        <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                      </label>
+                      <input type="checkbox" name="color2" id="color-62" class="order__checkbox">
+                      <label for="color-62" class="order__color">
+                        <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                      </label>
+                      <input type="checkbox" name="color3" id="color-63" class="order__checkbox">
+                      <label for="color-63" class="order__color">
+                        <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                      </label>
+                      <input type="checkbox" name="color4" id="color-64" class="order__checkbox" checked>
+                      <label for="color-64" class="order__color">
+                        <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                      </label>
+                    </div>
+                  </form>
+                  <p class="card__model">
+                    <span>Материал:</span>
+                    <a href="#">Экошпон</a>
+                  </p>
+                  <p class="card__model">
+                    <span>Стекла:</span>
+                    <a href="#">Нет</a>
+                  </p>
+                </div>
+              </div>
+              <div class="card__block">
+                <p class="card__price">3 700 руб.</p>
+                <a href="#" class="btn-colored btn-colored--grey card__btn">Добавить в корзину</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-prev card__prev"></div>
+        <div class="swiper-button-next card__next"></div>
+      </div>
     </section>
     
-    <section class="card wrapper">
-      <p class="title">Популярные товары</p>
-      <ul class="card__list">
-        <li class="card__item">
-          <div class="card__block">
-            <a href="#" class="card__img">
-              <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
-            </a>
-            <div class="card__info">
-              <p class="card__title">Paradiso 1</p>
-              <span class="card__articul">Артикул:124325425</span>
-              <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
-              <p class="card__model">
-                <span>Модельный ряд:</span>
-                <a href="#">Paradiso</a>
-              </p>
-              <form action="#" class="order order--card">
-                <span>Цвет:</span>
-                <div class="order__choice">
-                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
-                  <label for="color1" class="order__color">
-                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  </label>
-                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
-                  <label for="color2" class="order__color">
-                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  </label>
-                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
-                  <label for="color3" class="order__color">
-                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  </label>
-                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
-                  <label for="color4" class="order__color">
-                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
-                  </label>
+    <section class="card">
+      <div class="wrapper">
+        <p class="title">Популярные товары</p>
+        <div class="swiper-container card__slider-2">
+          <ul class="swiper-wrapper card__list">
+            <li class="swiper-slide card__item">
+              <div class="card__block">
+                <a href="#" class="card__img">
+                  <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
+                </a>
+                <div class="card__info">
+                  <p class="card__title">Paradiso 1</p>
+                  <span class="card__articul">Артикул:124325425</span>
+                  <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
+                  <p class="card__model">
+                    <span>Модельный ряд:</span>
+                    <a href="#">Paradiso</a>
+                  </p>
+                  <form action="#" class="order order--card">
+                    <span>Цвет:</span>
+                    <div class="order__choice">
+                      <input type="checkbox" name="color1" id="color11" class="order__checkbox">
+                      <label for="color11" class="order__color">
+                        <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                      </label>
+                      <input type="checkbox" name="color2" id="color12" class="order__checkbox">
+                      <label for="color12" class="order__color">
+                        <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                      </label>
+                      <input type="checkbox" name="color3" id="color13" class="order__checkbox">
+                      <label for="color13" class="order__color">
+                        <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                      </label>
+                      <input type="checkbox" name="color4" id="color14" class="order__checkbox" checked>
+                      <label for="color14" class="order__color">
+                        <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                      </label>
+                    </div>
+                  </form>
+                  <p class="card__model">
+                    <span>Материал:</span>
+                    <a href="#">Экошпон</a>
+                  </p>
+                  <p class="card__model">
+                    <span>Стекла:</span>
+                    <a href="#">Нет</a>
+                  </p>
                 </div>
-              </form>
-              <p class="card__model">
-                <span>Материал:</span>
-                <a href="#">Экошпон</a>
-              </p>
-              <p class="card__model">
-                <span>Стекла:</span>
-                <a href="#">Нет</a>
-              </p>
-            </div>
-          </div>
-          <div class="card__block">
-            <p class="card__price">3 700 руб.</p>
-            <a href="#" class="btn-colored btn-colored--grey">Добавить в корзину</a>
-          </div>
-        </li>
-        <li class="card__item">
-          <div class="card__block">
-            <a href="#" class="card__img">
-              <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
-            </a>
-            <div class="card__info">
-              <p class="card__title">Paradiso 3</p>
-              <span class="card__articul">Артикул:124325425</span>
-              <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
-              <p class="card__model">
-                <span>Модельный ряд:</span>
-                <a href="#">Paradiso</a>
-              </p>
-              <form action="#" class="order order--card">
-                <span>Цвет:</span>
-                <div class="order__choice">
-                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
-                  <label for="color1" class="order__color">
-                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  </label>
-                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
-                  <label for="color2" class="order__color">
-                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  </label>
-                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
-                  <label for="color3" class="order__color">
-                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  </label>
-                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
-                  <label for="color4" class="order__color">
-                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
-                  </label>
+              </div>
+              <div class="card__block">
+                <p class="card__price">3 700 руб.</p>
+                <a href="#" class="btn-colored btn-colored--grey card__btn">Добавить в корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide card__item">
+              <div class="card__block">
+                <a href="#" class="card__img">
+                  <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
+                </a>
+                <div class="card__info">
+                  <p class="card__title">Paradiso 3</p>
+                  <span class="card__articul">Артикул:124325425</span>
+                  <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
+                  <p class="card__model">
+                    <span>Модельный ряд:</span>
+                    <a href="#">Paradiso</a>
+                  </p>
+                  <form action="#" class="order order--card">
+                    <span>Цвет:</span>
+                    <div class="order__choice">
+                      <input type="checkbox" name="color1" id="color21" class="order__checkbox">
+                      <label for="color21" class="order__color">
+                        <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                      </label>
+                      <input type="checkbox" name="color2" id="color22" class="order__checkbox">
+                      <label for="color22" class="order__color">
+                        <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                      </label>
+                      <input type="checkbox" name="color3" id="color23" class="order__checkbox">
+                      <label for="color23" class="order__color">
+                        <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                      </label>
+                      <input type="checkbox" name="color4" id="color24" class="order__checkbox" checked>
+                      <label for="color24" class="order__color">
+                        <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                      </label>
+                    </div>
+                  </form>
+                  <p class="card__model">
+                    <span>Материал:</span>
+                    <a href="#">Экошпон</a>
+                  </p>
+                  <p class="card__model">
+                    <span>Стекла:</span>
+                    <a href="#">Нет</a>
+                  </p>
                 </div>
-              </form>
-              <p class="card__model">
-                <span>Материал:</span>
-                <a href="#">Экошпон</a>
-              </p>
-              <p class="card__model">
-                <span>Стекла:</span>
-                <a href="#">Нет</a>
-              </p>
-            </div>
-          </div>
-          <div class="card__block">
-            <p class="card__price">3 700 руб.</p>
-            <a href="#" class="btn-colored btn-colored--grey">Добавить в корзину</a>
-          </div>
-        </li>
-        <li class="card__item">
-          <div class="card__block">
-            <a href="#" class="card__img">
-              <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
-            </a>
-            <div class="card__info">
-              <p class="card__title">Fonseca 6</p>
-              <span class="card__articul">Артикул:124325425</span>
-              <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
-              <p class="card__model">
-                <span>Модельный ряд:</span>
-                <a href="#">Fonseca</a>
-              </p>
-              <form action="#" class="order order--card">
-                <span>Цвет:</span>
-                <div class="order__choice">
-                  <input type="checkbox" name="color1" id="color1" class="order__checkbox">
-                  <label for="color1" class="order__color">
-                    <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
-                  </label>
-                  <input type="checkbox" name="color2" id="color2" class="order__checkbox">
-                  <label for="color2" class="order__color">
-                    <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
-                  </label>
-                  <input type="checkbox" name="color3" id="color3" class="order__checkbox">
-                  <label for="color3" class="order__color">
-                    <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
-                  </label>
-                  <input type="checkbox" name="color4" id="color4" class="order__checkbox" checked>
-                  <label for="color4" class="order__color">
-                    <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
-                  </label>
+              </div>
+              <div class="card__block">
+                <p class="card__price">3 700 руб.</p>
+                <a href="#" class="btn-colored btn-colored--grey card__btn">Добавить в корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide card__item">
+              <div class="card__block">
+                <a href="#" class="card__img">
+                  <img src="img/paradiso-1.jpg" alt="" width="80" height="192">
+                </a>
+                <div class="card__info">
+                  <p class="card__title">Fonseca 6</p>
+                  <span class="card__articul">Артикул:124325425</span>
+                  <p>Новое покрытие Эко-шпон создаёт вид поверхности, неотличимый от натуральных древесных рисунков.</p>
+                  <p class="card__model">
+                    <span>Модельный ряд:</span>
+                    <a href="#">Fonseca</a>
+                  </p>
+                  <form action="#" class="order order--card">
+                    <span>Цвет:</span>
+                    <div class="order__choice">
+                      <input type="checkbox" name="color1" id="color31" class="order__checkbox">
+                      <label for="color31" class="order__color">
+                        <img src="img/color-1.jpg" alt="Paradiso 1" width="18" height="18" title="color 1">
+                      </label>
+                      <input type="checkbox" name="color2" id="color32" class="order__checkbox">
+                      <label for="color32" class="order__color">
+                        <img src="img/color-2.jpg" alt="Paradiso 1" width="18" height="18" title="color 2">
+                      </label>
+                      <input type="checkbox" name="color3" id="color33" class="order__checkbox">
+                      <label for="color33" class="order__color">
+                        <img src="img/color-3.jpg" alt="Paradiso 1" width="18" height="18" title="color 3">
+                      </label>
+                      <input type="checkbox" name="color4" id="color34" class="order__checkbox" checked>
+                      <label for="color34" class="order__color">
+                        <img src="img/color-4.jpg" alt="Paradiso 1" width="18" height="18" title="color 4">
+                      </label>
+                    </div>
+                  </form>
+                  <p class="card__model">
+                    <span>Материал:</span>
+                    <a href="#">Экошпон</a>
+                  </p>
+                  <p class="card__model">
+                    <span>Стекла:</span>
+                    <a href="#">Нет</a>
+                  </p>
                 </div>
-              </form>
-              <p class="card__model">
-                <span>Материал:</span>
-                <a href="#">Экошпон</a>
-              </p>
-              <p class="card__model">
-                <span>Стекла:</span>
-                <a href="#">Нет</a>
-              </p>
-            </div>
-          </div>
-          <div class="card__block">
-            <p class="card__price">3 700 руб.</p>
-            <a href="#" class="btn-colored btn-colored--grey">Добавить в корзину</a>
-          </div>
-        </li>
-      </ul>
+              </div>
+              <div class="card__block">
+                <p class="card__price">3 700 руб.</p>
+                <a href="#" class="btn-colored btn-colored--grey card__btn">Добавить в корзину</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-prev card__prev-2"></div>
+        <div class="swiper-button-next card__next-2"></div>
+      </div>
     </section>
   </main>
   
@@ -472,5 +534,33 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+<!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.card__slider', {
+      navigation: {
+        nextEl: '.card__next',
+        prevEl: '.card__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 28,
+    });
+    
+    var mySwiper = new Swiper ('.card__slider-2', {
+      navigation: {
+        nextEl: '.card__next-2',
+        prevEl: '.card__prev-2',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 28,
+    });
+  </script>
 </body>
 </html>

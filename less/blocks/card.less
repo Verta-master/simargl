@@ -1,12 +1,11 @@
 .card {
-  margin-bottom: 88px;
+  position: relative;
+  margin-bottom: 140px;
 }
 
 .card__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: flex-start;
+  .reset();
+  list-style-type: none;
 }
 
 .card__item {
@@ -78,14 +77,19 @@
   }
 
   .card__title {
-    margin: 0;
+    margin-bottom: 3px;
+    margin-top: 3px;
     font-size: 16px;
+    line-height: 1.2;
     font-weight: 500;
     color: #000;
   }
 
   .card__articul {
+    display: block;
+    margin-bottom: 5px;
     font-size: 10px;
+    line-height: 1.2;
     color: #d4d4d4;
   }
 }
@@ -99,6 +103,8 @@
 }
 
 .card__info .card__model {
+  margin-top: 12px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,4 +123,21 @@
       text-decoration: none;
     }
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 55%;
+  background-image: url(../img/angle-down.svg);
+  background-size: 24px 24px;
+}
+
+.swiper-button-prev {
+  transform: rotate(90deg);
+  left: ~"calc(50% - 650px)";
+}
+
+.swiper-button-next {
+  transform: rotate(-90deg);
+  right: ~"calc(50% - 650px)";
 }
