@@ -13,7 +13,7 @@
   z-index: 2;
   display: inline-block;
   vertical-align: middle;
-  width: 56px;
+  width: 54px;
   height: 48px;
   font-size: 14px;
   color: #4a4a4a;
@@ -46,5 +46,33 @@
     &::after {
       display: block;
     }
+  }
+}
+
+.pages__link--first,
+.pages__link--last {
+  background-image: url(../img/sharp-fast_forward-24px.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.pages__link--prev,
+.pages__link--next {
+  background-image: url(../img/sharp-play_arrow-24px.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.pages__link--first,
+.pages__link--prev {
+  transform: rotate(180deg);
+}
+
+a.pages__link {
+  &:hover,
+  &:active {
+    opacity: 0.7;
   }
 }
