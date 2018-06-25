@@ -169,6 +169,9 @@
   .warranty__item {
     margin-right: 0;
   }
+  .delivery__img {
+    height: 100%;
+  }
 }
 
 //----------------------------------
@@ -236,6 +239,20 @@
   }
   .service__list {
     justify-content: center;
+  }
+  .delivery__wrap {
+    display: block;
+  }
+  .delivery__img {
+    width: 100%;
+    height: 150px;
+    
+    &::after {
+      display: none;
+    }
+  }
+  .delivery__info {
+    width: 100%;
   }
 }
 
@@ -487,16 +504,22 @@
     width: 100%;
     padding: 16px;
   }
+  .warranty__info,
   .service__info,
   .warranty__item,
   .service__item {
     width: 100%;
   }
+  .warranty__item,
   .service__item {
     display: block;
   }
+  .warranty__img,
   .service__img {
     width: 100%;
     height: 150px;
+  }
+  .warranty__img::after {
+    display: none;
   }
 }
