@@ -1152,9 +1152,6 @@ button {
 .sort__select option[disabled] {
   display: none;
 }
-.sort__select:last-of-type {
-  margin-right: 0;
-}
 .sort__select--color {
   padding-left: 40px;
   background-image: url(../img/angle-down.svg), url(../img/color-spot-select.png);
@@ -1168,6 +1165,9 @@ button {
   padding-left: 15px;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
+}
+.sort__price span {
+  margin-right: 15px;
 }
 .sort__input {
   width: 120px;
@@ -1200,6 +1200,14 @@ button {
 .sort__btn {
   width: 192px;
   height: 40px;
+}
+.sort__find {
+  width: 156px;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: #86939e;
+  border: 1px solid #86939e;
 }
 .result__list {
   margin: 0;
@@ -1440,6 +1448,9 @@ button {
   font-weight: 300;
   color: #000000;
   text-align: center;
+}
+.title span {
+  font-weight: 700;
 }
 .card {
   position: relative;
@@ -2335,6 +2346,27 @@ a.pages__link:active {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.warranty--doors .title {
+  margin-top: 38px;
+  margin-bottom: 73px;
+}
+.warranty--doors .warranty__img {
+  position: relative;
+}
+.warranty--doors .warranty__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 35px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #ffffff), to(#ffffff));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, #ffffff 50%, #ffffff 100%);
+  background-repeat: no-repeat;
+}
+.warranty--doors .warranty__item {
+  min-height: 192px;
+}
 .warranty__list {
   margin: 0;
   padding: 0;
@@ -2425,6 +2457,71 @@ a.pages__link:active {
   font-size: 16px;
   font-weight: 500;
   color: #000;
+}
+.delivery {
+  margin-top: 35px;
+  margin-bottom: 80px;
+}
+.delivery .title {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.delivery__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  border: solid 1px rgba(239, 239, 239, 0.55);
+}
+.delivery__img {
+  position: relative;
+  width: 497px;
+  height: 312px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.delivery__img img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.delivery__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #ffffff), to(#ffffff));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, #ffffff 50%, #ffffff 100%);
+  background-repeat: no-repeat;
+}
+.delivery__info {
+  width: 60%;
+  padding: 30px;
+}
+.delivery__info p {
+  max-width: 100%;
 }
 @media (max-width: 1400px) {
   .swiper-button-prev {
@@ -2602,6 +2699,9 @@ a.pages__link:active {
   .warranty__item {
     margin-right: 0;
   }
+  .delivery__img {
+    height: 100%;
+  }
 }
 @media (max-width: 1022px) {
   .gallery__block {
@@ -2670,6 +2770,19 @@ a.pages__link:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .delivery__wrap {
+    display: block;
+  }
+  .delivery__img {
+    width: 100%;
+    height: 150px;
+  }
+  .delivery__img::after {
+    display: none;
+  }
+  .delivery__info {
+    width: 100%;
   }
 }
 @media (max-width: 766px) {
@@ -2952,16 +3065,22 @@ a.pages__link:active {
     width: 100%;
     padding: 16px;
   }
+  .warranty__info,
   .service__info,
   .warranty__item,
   .service__item {
     width: 100%;
   }
+  .warranty__item,
   .service__item {
     display: block;
   }
+  .warranty__img,
   .service__img {
     width: 100%;
     height: 150px;
+  }
+  .warranty__img::after {
+    display: none;
   }
 }
