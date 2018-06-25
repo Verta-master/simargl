@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simargl</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--internal">
+    <div class="wrapper header__wrap">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="Simargl logo" width="164" height="90">
+      </a>
+      <nav class="menu">
+        <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О компании</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Продукция</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Купить двери</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__user">
+        <div class="header__link">
+          <a href="tel:+73432885139" class="header__phone">+7 343 288 51 39</a>
+          <a href="#" class="header__cart">Ваша корзина</a>
+        </div>
+        <form action="#" class="search">
+          <button type="button" class="search__btn"><span class="visually-hidden">Найти</span></button>
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+        </form>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs wrapper">
+      <a href="#" class="breadcrumbs__link">Главная страница</a>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Контакты</span>
+    </nav>
+    
+    <section class="contacts wrapper">
+      <p class="title">Контактная информация</p>
+      <div class="contacts__wrap">
+        <div class="contacts__map">
+          <iframe src="https://yandex.com/map-widget/v1/-/CBueEOc48B"></iframe>
+        </div>
+        <div class="contacts__info">
+          <p class="contacts__title">Главный офис</p>
+          <address>Свердловская область, поселок Прохладный, ул. Березовая, 5</address>
+          <a href="tel:+73432885139" class="contacts__phone">+ 7 343 288 51 39</a>
+          <a href="mailto:zakaz@simargl-doors.ru" class="contacts__mail">zakaz@simargl-doors.ru</a>
+          <p class="contacts__title">Отдел продаж</p>
+          <address>Свердловская область, поселок Прохладный, ул. Березовая, 5</address>
+          <a href="tel:+73432885139" class="contacts__phone">+ 7 343 288 51 39</a>
+          <a href="mailto:zakaz@simargl-doors.ru" class="contacts__mail">zakaz@simargl-doors.ru</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="form">
+      <div class="wrapper">
+        <p class="title">Остались вопросы?</p>
+        <form action="#" method="post" class="form__order">
+          <div class="form__wrap">
+            <fieldset class="form__field">
+              <input type="text" name="name" class="modal__input modal__input--name" placeholder="Укажите ваше имя полностью">
+              <input type="tel" name="phone" class="modal__input modal__input--phone" placeholder="Ваш контактный номер телефона">
+              <input type="email" name="email" class="modal__input modal__input--email" placeholder="Ваш контактный e-mail">
+            </fieldset>
+            <textarea name="text" class="form__area" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <input type="checkbox" name="check" id="check" class="modal__checkbox">
+          <label for="check" class="modal__label">Отправляя форму, я даю согласие на обработку персональных данных</label>
+          <button type="submit" class="btn form__btn">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper footer__wrap">
+      <address>Свердловская область, пос.Прохладный, ул. Березовая 5</address>
+      <div class="footer__user">
+        <a href="tel:+73432885139" class="footer__phone">+7 343 288 51 39</a>
+        <a href="mailto:zakaz@simargl-doors.ru" class="footer__mail">zakaz@simargl-doors.ru</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
