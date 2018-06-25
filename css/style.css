@@ -2648,7 +2648,7 @@ a.pages__link:active {
 }
 .basket__model {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2673,7 +2673,7 @@ a.pages__link:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  float: right;
+  margin-top: -35px;
 }
 .basket__plus,
 .basket__minus {
@@ -2917,6 +2917,22 @@ a.pages__link:active {
   .delivery__img {
     height: 100%;
   }
+  .basket__block {
+    padding-left: 24px;
+  }
+  .basket__number {
+    margin-top: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .basket__model {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .basket .card__info {
+    width: 75%;
+  }
 }
 @media (max-width: 1022px) {
   .gallery__block {
@@ -2999,6 +3015,34 @@ a.pages__link:active {
   .delivery__info {
     width: 100%;
   }
+  .basket__wrap {
+    display: block;
+  }
+  .basket__block,
+  .basket .basket__remove,
+  .basket .card__block {
+    width: 100%;
+  }
+  .basket__wrap--remove {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .basket .modal__label {
+    float: none;
+    display: block;
+  }
+  .basket__title,
+  .basket__form {
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (max-width: 766px) {
   .search__input {
@@ -3058,6 +3102,7 @@ a.pages__link:active {
   .modal {
     padding: 20px;
   }
+  .basket__details,
   .contacts__wrap {
     display: block;
   }
@@ -3067,6 +3112,15 @@ a.pages__link:active {
   }
   .form .modal__label {
     max-width: 300px;
+  }
+  .basket .card__info {
+    width: 60%;
+  }
+  .basket__details .order__color {
+    margin-left: auto;
+  }
+  .basket__total {
+    font-size: 18px;
   }
 }
 @media (max-width: 480px) {
@@ -3300,5 +3354,16 @@ a.pages__link:active {
   }
   .sort__price span {
     margin-right: 0;
+  }
+  .basket .card__info {
+    width: 100%;
+  }
+  .basket__total {
+    display: block;
+    text-align: center;
+  }
+  .basket__title,
+  .basket__form {
+    margin-left: 0;
   }
 }
