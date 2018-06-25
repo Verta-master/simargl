@@ -2170,14 +2170,14 @@ a.pages__link:active {
 .company__question {
   position: relative;
   margin: 0;
-  padding: 8px 40px;
+  padding: 10px 40px;
   font-size: 12px;
   line-height: 1.5;
   color: #000;
   background-image: url(../img/faq.jpg);
   background-repeat: no-repeat;
   background-size: 21px 21px;
-  background-position: 12px 10px;
+  background-position: 12px 8px;
   cursor: pointer;
 }
 .company__question::after {
